@@ -4,7 +4,7 @@ import app05
 class TestDockerapp(unittest.TestCase):
 
     def setUp(self):
-        self.app = app.app.test_client()
+        self.app = app05.app.test_client()
 
     def test_save_value(self):
         response = self.app.post('/', data=dict(submit='save', key='2', cache_value='two'))
