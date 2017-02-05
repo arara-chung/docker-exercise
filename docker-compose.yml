@@ -2,7 +2,7 @@ version: '2'
 services:
   da:
     build: .
-    images: dockerexercise_da
+    image: dockerexercise_da
     ports:
       - '5000:5000'
     # volumes:
