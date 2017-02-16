@@ -19,7 +19,7 @@ deployment:
     branch: [master]
     commands:
       - docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
-      - docker tag dockerexercise_da $DOCKER_HUB_USER_ID/da:$CIRCLE_SHA1
-      - docker tag dockerexercise_da $DOCKER_HUB_USER_ID/da:latest
+      - docker tag dapp $DOCKER_HUB_USER_ID/da:$CIRCLE_SHA1
+      - docker tag dapp $DOCKER_HUB_USER_ID/da:latest
       - docker push $DOCKER_HUB_USER_ID/da:$CIRCLE_SHA1
       - docker push $DOCKER_HUB_USER_ID/da:latest
