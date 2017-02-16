@@ -1,6 +1,6 @@
 version: '2'
 services:
-  da:
+  dapp:
     build: .
     image: dapp
     ports:
