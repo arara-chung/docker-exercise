@@ -2,7 +2,7 @@ version: '2'
 services:
   da:
     build: .
-    image: dockerexercise_da
+    image: dapp
     ports:
       - '5000:5000'
     # volumes:
